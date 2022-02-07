@@ -32,7 +32,7 @@ public class SocialMediaSubscriptionController {
             value = {"/subscriptions/{userId}" },
             method = GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public Subscription getUserById(final @PathVariable int userId) {
+    public Subscription getUserById(final @PathVariable String userId) {
         log.info("get subscription by user id");
         return socialMediaSubscriptionService.getByUserId(userId);
     }

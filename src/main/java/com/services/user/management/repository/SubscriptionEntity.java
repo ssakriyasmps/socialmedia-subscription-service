@@ -20,11 +20,11 @@ public class SubscriptionEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private int userId;
+    private String userId;
     private String socialMedia;
 
 
-    public SubscriptionEntity(int userId, String socialMedia){
+    public SubscriptionEntity(String userId, String socialMedia){
         this.userId = userId;
         this.socialMedia = socialMedia;
     }

@@ -8,6 +8,6 @@ import java.util.List;
 
 @Repository
 public interface SubscriptionRepository extends CrudRepository<SubscriptionEntity, Integer> {
-    List<SubscriptionEntity> findByUserId(int userId);
+    List<SubscriptionEntity> findByUserId(String userId);
 }
 

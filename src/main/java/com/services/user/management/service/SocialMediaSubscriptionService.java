@@ -23,7 +23,7 @@ public class SocialMediaSubscriptionService {
         repository.saveAll(entities);
     }
 
-    public Subscription getByUserId(int userId) {
+    public Subscription getByUserId(String userId) {
 
         List<SubscriptionEntity> subscriptionEntities = repository.findByUserId(userId);
 
